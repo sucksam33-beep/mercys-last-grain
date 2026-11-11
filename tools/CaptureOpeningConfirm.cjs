@@ -1,0 +1,14 @@
+const fs=require("node:fs"),path=require("node:path");
+const source=fs.readFileSync(path.join(__dirname,"opening-confirm-native-qa.cjs"),"utf8");
+const start=source.indexOf("  assert.equal(await run(");
+const end=source.indexOf(" }finally",start);
+if(start<0||end<0)throw Error("Missing capture insertion point");
+const capture=`  await run("(async()=>{const video=window.soilOpening.video;await new Promise(resolve=>{video.addEventListener('seeked',resolve,{once:true});video.currentTime=21.7;});})()");
+  await send("Input.dispatchKeyEvent",{type:"keyDown",key:"Enter",code:"Enter",windowsVirtualKeyCode:13});
+  await send("Input.dispatchKeyEvent",{type:"keyUp",key:"Enter",code:"Enter",windowsVirtualKeyCode:13});
+  await until(()=>run("openingConfirm.open && openingConfirm.querySelector('h2').textContent==='영상을 스킵 하시겠습니까?' && window.soilOpening.video.paused"),"skip confirmation");
+  await shot("skip-confirmation");
+  assert.deepEqual(exceptions,[]);
+  console.log("Captured installed Windows game confirmation");
+`;
+fs.writeFileSync(path.join(__dirname,"capture-opening-confirm-native.cjs"),(source.slice(0,start)+capture+source.slice(end)).replace('path.join(root,"comparison")','path.join(root,"dialogue-cinematic","walter-confirm")').replace('verify("still-film",path.join(root,"dialogue-opening-stage"),9776)','verify("windows",root,9778)'));

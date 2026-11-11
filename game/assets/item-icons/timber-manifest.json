@@ -1,0 +1,24 @@
+[
+  {
+    "id": "timber_common",
+    "name": "일반 목재",
+    "model": "assets/living-props/firewood.glb",
+    "falRequestId": "01a1bc7b-2169-7ec3-9f2f-3056e0de6187",
+    "icon": "assets/item-icons/timber_common.png"
+  },
+  {
+    "id": "timber_log",
+    "name": "원목",
+    "icon": "assets/item-icons/timber_log.png"
+  },
+  {
+    "id": "timber_quality",
+    "name": "질 좋은 목재",
+    "icon": "assets/item-icons/timber_quality.png"
+  },
+  {
+    "id": "timber_premium",
+    "name": "고급 목재",
+    "icon": "assets/item-icons/timber_premium.png"
+  }
+]

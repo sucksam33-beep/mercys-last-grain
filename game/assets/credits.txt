@@ -1,0 +1,36 @@
+Poly Haven — CC0
+Pine Tree 01: bark and needles (adapted onto a web mesh)
+https://polyhaven.com/a/pine_tree_01
+Boulder 01: geometry and color texture (reduced for the web)
+https://polyhaven.com/a/boulder_01
+Weathered wood, roof tiles and forest floor
+https://polyhaven.com/a/wood_planks_grey
+https://polyhaven.com/a/roof_tiles_14
+https://polyhaven.com/a/forest_ground_04
+https://polyhaven.com/license
+Tree Small 02 and Rock Moss Set 01 (meshes reduced for web), Rough Plasterbrick 05, Stone Wall 02
+https://polyhaven.com/a/tree_small_02
+https://polyhaven.com/a/rock_moss_set_01
+https://polyhaven.com/a/rough_plasterbrick_05
+https://polyhaven.com/a/stone_wall_02
+
+MakeHuman base mesh — CC0; adapted head geometry
+https://github.com/makehumancommunity/makehuman
+The face and coat maps incorporate the Returning Waters protagonist reference.
+
+Cesium Man © 2017 Cesium — Creative Commons Attribution 4.0 International
+https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CesiumMan
+https://creativecommons.org/licenses/by/4.0/
+Adapted pose, scale, shading and movement for Returning Waters.
+
+Poly Haven — additional Pine Tree 01 bark and twig normal maps, Wood Planks Dirt color and normal maps (CC0).
+https://polyhaven.com/a/wood_planks_dirt
+
+Maison diamantée · Frédérique Bertrand – 3D Imago Urbis · CC BY 4.0 · Scaled, rotated and clipped for game entrances.
+https://zenodo.org/records/10294387
+https://creativecommons.org/licenses/by/4.0/
+Venus, a Shetland fourareen · Scottish Maritime Museum · CC0 · Scaled and rotated.
+https://zenodo.org/records/21647433
+Wooden Crate 02 and Rough Linen · Poly Haven · CC0 · Crate scans assembled into market counters.
+https://polyhaven.com/a/wooden_crate_02
+https://polyhaven.com/a/rough_linen

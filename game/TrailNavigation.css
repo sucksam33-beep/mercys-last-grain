@@ -1,0 +1,10 @@
+.trail-navigation-panel{display:grid;gap:.45rem;margin:.5rem 0 .65rem}
+.trail-navigation-status{font-size:.83rem;color:var(--ui-sub);min-height:1.4em}
+.trail-navigation-controls{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
+.trail-navigation-controls select{min-width:6rem;max-width:100%;padding:.39rem .54rem;background:var(--ui-back);color:var(--ui-text,#fff3d1);border:1px solid var(--ui-line);border-radius:4px;font:inherit}
+.trail-navigation-controls select:last-of-type{flex:1 1 12rem}
+body dialog .trail-destination-pin{position:absolute;z-index:2;transform:translate(-50%,-50%);width:16px;height:16px;min-width:0;min-height:0;padding:0;border:2px solid #2b3026;border-radius:50%;background:#f1c68b;box-shadow:0 0 0 1px #ece3c59c}
+body dialog .trail-destination-pin[data-kind="gather"]{background:#b4d293}
+body dialog .trail-destination-pin[data-kind="view"]{background:#d9e3d1}
+body dialog .trail-destination-pin:hover,body dialog .trail-destination-pin:focus-visible{outline:2px solid #fff28d;z-index:3}
+body dialog .trail-destination-pin[hidden]{display:none}

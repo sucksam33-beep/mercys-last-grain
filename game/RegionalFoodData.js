@@ -1,0 +1,543 @@
+const regionalDishes=[
+ {
+  "id": "dish-1-1",
+  "name": "솥밥 도시락",
+  "region": 0,
+  "needs": [
+   [
+    "손질한 곡물",
+    2
+   ],
+   [
+    "작은 고기",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Meal",
+  "icon": "assets/item-icons/dish-1-1.png"
+ },
+ {
+  "id": "dish-1-2",
+  "name": "감자 산나물국",
+  "region": 0,
+  "needs": [
+   [
+    "감자",
+    2
+   ],
+   [
+    "조릿대 잎",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Light",
+  "icon": "assets/item-icons/dish-1-2.png"
+ },
+ {
+  "id": "dish-1-3",
+  "name": "산감 곡물죽",
+  "region": 0,
+  "needs": [
+   [
+    "손질한 곡물",
+    1
+   ],
+   [
+    "산감",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Meal",
+  "icon": "assets/item-icons/dish-1-3.png"
+ },
+ {
+  "id": "dish-2-1",
+  "name": "보리 고기 스튜",
+  "region": 1,
+  "needs": [
+   [
+    "들보리",
+    1
+   ],
+   [
+    "사냥한 고기",
+    1
+   ],
+   [
+    "양파",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 2,
+  "profile": "Shared",
+  "icon": "assets/item-icons/dish-2-1.png"
+ },
+ {
+  "id": "dish-2-2",
+  "name": "운하 농어 양파찜",
+  "region": 1,
+  "needs": [
+   [
+    "유럽농어",
+    1
+   ],
+   [
+    "양파",
+    1
+   ],
+   [
+    "호밀",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 2,
+  "profile": "Meal",
+  "icon": "assets/item-icons/dish-2-2.png"
+ },
+ {
+  "id": "dish-2-3",
+  "name": "사과 호밀빵",
+  "region": 1,
+  "needs": [
+   [
+    "호밀",
+    2
+   ],
+   [
+    "야생 사과",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 3,
+  "profile": "Light",
+  "icon": "assets/item-icons/dish-2-3.png"
+ },
+ {
+  "id": "dish-3-1",
+  "name": "테파리콩 기장밥",
+  "region": 2,
+  "needs": [
+   [
+    "테파리콩",
+    1
+   ],
+   [
+    "사막 기장",
+    1
+   ],
+   [
+    "소금",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Meal",
+  "icon": "assets/item-icons/dish-3-1.png"
+ },
+ {
+  "id": "dish-3-2",
+  "name": "가시배 무화과 과일찜",
+  "region": 2,
+  "needs": [
+   [
+    "가시배 열매",
+    1
+   ],
+   [
+    "사막 무화과",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Cooling",
+  "icon": "assets/item-icons/dish-3-2.png"
+ },
+ {
+  "id": "dish-3-3",
+  "name": "협곡 콩고기 냄비",
+  "region": 2,
+  "needs": [
+   [
+    "테파리콩",
+    1
+   ],
+   [
+    "사냥한 고기",
+    1
+   ],
+   [
+    "바위박하 잎",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 2,
+  "profile": "Hearty",
+  "icon": "assets/item-icons/dish-3-3.png"
+ },
+ {
+  "id": "dish-4-1",
+  "name": "산귀리 사냥꾼 솥밥",
+  "region": 3,
+  "needs": [
+   [
+    "산귀리",
+    1
+   ],
+   [
+    "사냥한 고기",
+    1
+   ],
+   [
+    "서비스베리",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Meal",
+  "icon": "assets/item-icons/dish-4-1.png"
+ },
+ {
+  "id": "dish-4-2",
+  "name": "산박하 보리국",
+  "region": 3,
+  "needs": [
+   [
+    "초지 보리",
+    1
+   ],
+   [
+    "산박하 잎",
+    1
+   ],
+   [
+    "고기 조각",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Warming",
+  "icon": "assets/item-icons/dish-4-2.png"
+ },
+ {
+  "id": "dish-4-3",
+  "name": "서비스베리 귀리말이",
+  "region": 3,
+  "needs": [
+   [
+    "산귀리",
+    2
+   ],
+   [
+    "서비스베리",
+    2
+   ]
+  ],
+  "station": "건조대",
+  "servings": 3,
+  "profile": "Preserved",
+  "icon": "assets/item-icons/dish-4-3.png"
+ },
+ {
+  "id": "dish-5-1",
+  "name": "감자와 고기 전골",
+  "region": 4,
+  "needs": [
+   [
+    "감자",
+    2
+   ],
+   [
+    "큰 고기",
+    1
+   ],
+   [
+    "양파",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 3,
+  "profile": "Shared",
+  "icon": "assets/item-icons/dish-5-1.png"
+ },
+ {
+  "id": "dish-5-2",
+  "name": "호숫가 연어구이",
+  "region": 4,
+  "needs": [
+   [
+    "코카니연어",
+    1
+   ],
+   [
+    "감자",
+    1
+   ],
+   [
+    "소금",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 2,
+  "profile": "Hearty",
+  "icon": "assets/item-icons/dish-5-2.png"
+ },
+ {
+  "id": "dish-5-3",
+  "name": "블랙커런트 메밀전",
+  "region": 4,
+  "needs": [
+   [
+    "붉은 메밀",
+    2
+   ],
+   [
+    "블랙커런트",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 3,
+  "profile": "Light",
+  "icon": "assets/item-icons/dish-5-3.png"
+ },
+ {
+  "id": "dish-6-1",
+  "name": "숭어 갈대밭 솥밥",
+  "region": 5,
+  "needs": [
+   [
+    "숭어",
+    1
+   ],
+   [
+    "야생 쌀",
+    1
+   ],
+   [
+    "물민트 잎",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Meal",
+  "icon": "assets/item-icons/dish-6-1.png"
+ },
+ {
+  "id": "dish-6-2",
+  "name": "제방 블루길 양파탕",
+  "region": 5,
+  "needs": [
+   [
+    "블루길",
+    1
+   ],
+   [
+    "양파",
+    1
+   ],
+   [
+    "제방 기장",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 2,
+  "profile": "Shared",
+  "icon": "assets/item-icons/dish-6-2.png"
+ },
+ {
+  "id": "dish-6-3",
+  "name": "감과 수수 경단",
+  "region": 5,
+  "needs": [
+   [
+    "수수",
+    2
+   ],
+   [
+    "야생 감",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 3,
+  "profile": "Light",
+  "icon": "assets/item-icons/dish-6-3.png"
+ },
+ {
+  "id": "dish-7-1",
+  "name": "소금에 말린 정어리",
+  "region": 6,
+  "needs": [
+   [
+    "정어리",
+    3
+   ],
+   [
+    "소금",
+    1
+   ]
+  ],
+  "station": "건조대",
+  "servings": 3,
+  "profile": "Preserved",
+  "icon": "assets/item-icons/dish-7-1.png"
+ },
+ {
+  "id": "dish-7-2",
+  "name": "붉은퉁돔 기장솥",
+  "region": 6,
+  "needs": [
+   [
+    "붉은퉁돔",
+    1
+   ],
+   [
+    "해안 기장",
+    1
+   ],
+   [
+    "소금",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Hearty",
+  "icon": "assets/item-icons/dish-7-2.png"
+ },
+ {
+  "id": "dish-7-3",
+  "name": "망고 동부콩 밥",
+  "region": 6,
+  "needs": [
+   [
+    "망고",
+    1
+   ],
+   [
+    "동부 꼬투리",
+    1
+   ],
+   [
+    "해안 기장",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Meal",
+  "icon": "assets/item-icons/dish-7-3.png"
+ },
+ {
+  "id": "dish-8-1",
+  "name": "청어 보리죽",
+  "region": 7,
+  "needs": [
+   [
+    "청어",
+    1
+   ],
+   [
+    "내한성 보리",
+    1
+   ],
+   [
+    "양파",
+    1
+   ]
+  ],
+  "station": "여행솥",
+  "servings": 2,
+  "profile": "Warming",
+  "icon": "assets/item-icons/dish-8-1.png"
+ },
+ {
+  "id": "dish-8-2",
+  "name": "월귤 귀리 건조식",
+  "region": 7,
+  "needs": [
+   [
+    "해안 귀리",
+    2
+   ],
+   [
+    "월귤",
+    2
+   ]
+  ],
+  "station": "건조대",
+  "servings": 3,
+  "profile": "Preserved",
+  "icon": "assets/item-icons/dish-8-2.png"
+ },
+ {
+  "id": "dish-8-3",
+  "name": "관측소 난롯가 고기수프",
+  "region": 7,
+  "needs": [
+   [
+    "큰 고기",
+    1
+   ],
+   [
+    "감자",
+    2
+   ],
+   [
+    "내한성 보리",
+    1
+   ]
+  ],
+  "station": "집 화덕",
+  "servings": 3,
+  "profile": "Shared",
+  "icon": "assets/item-icons/dish-8-3.png"
+ }
+];
+const regionalIngredients=[
+ {
+  "id": "감자",
+  "name": "감자",
+  "code": "potato",
+  "region": 0,
+  "price": 3,
+  "source": "아사기 논둑 식료품점 · 비버턴 역전 식료품점",
+  "icon": "assets/item-icons/ingredient-potato.png"
+ },
+ {
+  "id": "양파",
+  "name": "양파",
+  "code": "onion",
+  "region": 1,
+  "price": 3,
+  "source": "브뤼넨 시장 곡물상 · 생오렐 제방 식료품점",
+  "icon": "assets/item-icons/ingredient-onion.png"
+ },
+ {
+  "id": "소금",
+  "name": "소금",
+  "code": "salt",
+  "region": 6,
+  "price": 4,
+  "source": "암바로 해안 과일점 · 지역 교역",
+  "icon": "assets/item-icons/ingredient-salt.png"
+ }
+];

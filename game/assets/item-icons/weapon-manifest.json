@@ -1,0 +1,326 @@
+[
+  {
+    "id": "staff-01",
+    "name": "삼나무 순찰봉",
+    "icon": "assets/item-icons/staff-01.png",
+    "model": "assets/weapon-models/staff-01.glb"
+  },
+  {
+    "id": "staff-02",
+    "name": "미루나무 균형봉",
+    "icon": "assets/item-icons/staff-02.png",
+    "model": "assets/weapon-models/staff-02.glb"
+  },
+  {
+    "id": "staff-03",
+    "name": "메스키트 돌기봉",
+    "icon": "assets/item-icons/staff-03.png",
+    "model": "assets/weapon-models/staff-03.glb"
+  },
+  {
+    "id": "staff-04",
+    "name": "송진 먹인 고원봉",
+    "icon": "assets/item-icons/staff-04.png",
+    "model": "assets/weapon-models/staff-04.glb"
+  },
+  {
+    "id": "hunting-bow-01",
+    "name": "조릿대 속사활",
+    "icon": "assets/item-icons/hunting-bow-01.png",
+    "model": "assets/weapon-models/hunting-bow-01.glb"
+  },
+  {
+    "id": "hunting-bow-02",
+    "name": "삼나무 숲활",
+    "icon": "assets/item-icons/hunting-bow-02.png",
+    "model": "assets/weapon-models/hunting-bow-02.glb"
+  },
+  {
+    "id": "hunting-bow-03",
+    "name": "미루나무 사구활",
+    "icon": "assets/item-icons/hunting-bow-03.png",
+    "model": "assets/weapon-models/hunting-bow-03.glb"
+  },
+  {
+    "id": "hunting-bow-04",
+    "name": "참나무 짧은활",
+    "icon": "assets/item-icons/hunting-bow-04.png",
+    "model": "assets/weapon-models/hunting-bow-04.glb"
+  },
+  {
+    "id": "hunting-bow-05",
+    "name": "메스키트 접합활",
+    "icon": "assets/item-icons/hunting-bow-05.png",
+    "model": "assets/weapon-models/hunting-bow-05.glb"
+  },
+  {
+    "id": "hunting-bow-06",
+    "name": "낙우송 갈대활",
+    "icon": "assets/item-icons/hunting-bow-06.png",
+    "model": "assets/weapon-models/hunting-bow-06.glb"
+  },
+  {
+    "id": "hunting-bow-07",
+    "name": "엘크힘줄 추적활",
+    "icon": "assets/item-icons/hunting-bow-07.png",
+    "model": "assets/weapon-models/hunting-bow-07.glb"
+  },
+  {
+    "id": "hunting-bow-08",
+    "name": "가문비 털감개 활",
+    "icon": "assets/item-icons/hunting-bow-08.png",
+    "model": "assets/weapon-models/hunting-bow-08.glb"
+  },
+  {
+    "id": "hunting-bow-09",
+    "name": "철테 보강활",
+    "icon": "assets/item-icons/hunting-bow-09.png",
+    "model": "assets/weapon-models/hunting-bow-09.glb"
+  },
+  {
+    "id": "hunting-bow-10",
+    "name": "타마린드 해안활",
+    "icon": "assets/item-icons/hunting-bow-10.png",
+    "model": "assets/weapon-models/hunting-bow-10.glb"
+  },
+  {
+    "id": "dagger-01",
+    "name": "편백 쥠새 작업칼",
+    "icon": "assets/item-icons/dagger-01.png",
+    "model": "assets/weapon-models/dagger-01.glb"
+  },
+  {
+    "id": "dagger-02",
+    "name": "조개 날 수확칼",
+    "icon": "assets/item-icons/dagger-02.png",
+    "model": "assets/weapon-models/dagger-02.glb"
+  },
+  {
+    "id": "dagger-03",
+    "name": "멧돼지가죽 손질칼",
+    "icon": "assets/item-icons/dagger-03.png",
+    "model": "assets/weapon-models/dagger-03.glb"
+  },
+  {
+    "id": "dagger-04",
+    "name": "용설란 수확칼",
+    "icon": "assets/item-icons/dagger-04.png",
+    "model": "assets/weapon-models/dagger-04.glb"
+  },
+  {
+    "id": "dagger-05",
+    "name": "참나무 접이칼",
+    "icon": "assets/item-icons/dagger-05.png",
+    "model": "assets/weapon-models/dagger-05.glb"
+  },
+  {
+    "id": "dagger-06",
+    "name": "낙우송 생선칼",
+    "icon": "assets/item-icons/dagger-06.png",
+    "model": "assets/weapon-models/dagger-06.glb"
+  },
+  {
+    "id": "dagger-07",
+    "name": "송진 고정 사냥칼",
+    "icon": "assets/item-icons/dagger-07.png",
+    "model": "assets/weapon-models/dagger-07.glb"
+  },
+  {
+    "id": "dagger-08",
+    "name": "악어가죽 그립칼",
+    "icon": "assets/item-icons/dagger-08.png",
+    "model": "assets/weapon-models/dagger-08.glb"
+  },
+  {
+    "id": "dagger-09",
+    "name": "철도 정비칼",
+    "icon": "assets/item-icons/dagger-09.png",
+    "model": "assets/weapon-models/dagger-09.glb"
+  },
+  {
+    "id": "dagger-10",
+    "name": "자작껍질 칼집 단검",
+    "icon": "assets/item-icons/dagger-10.png",
+    "model": "assets/weapon-models/dagger-10.glb"
+  },
+  {
+    "id": "axe-01",
+    "name": "편백 잔가지 도끼",
+    "icon": "assets/item-icons/axe-01.png",
+    "model": "assets/weapon-models/axe-01.glb"
+  },
+  {
+    "id": "axe-02",
+    "name": "구리 야영도끼",
+    "icon": "assets/item-icons/axe-02.png",
+    "model": "assets/weapon-models/axe-02.glb"
+  },
+  {
+    "id": "axe-03",
+    "name": "고철 철거도끼",
+    "icon": "assets/item-icons/axe-03.png",
+    "model": "assets/weapon-models/axe-03.glb"
+  },
+  {
+    "id": "axe-04",
+    "name": "피칸나무 측면도끼",
+    "icon": "assets/item-icons/axe-04.png",
+    "model": "assets/weapon-models/axe-04.glb"
+  },
+  {
+    "id": "axe-05",
+    "name": "참나무 벌목도끼",
+    "icon": "assets/item-icons/axe-05.png",
+    "model": "assets/weapon-models/axe-05.glb"
+  },
+  {
+    "id": "axe-06",
+    "name": "낙우송 방수도끼",
+    "icon": "assets/item-icons/axe-06.png",
+    "model": "assets/weapon-models/axe-06.glb"
+  },
+  {
+    "id": "axe-07",
+    "name": "전나무 쐐기도끼",
+    "icon": "assets/item-icons/axe-07.png",
+    "model": "assets/weapon-models/axe-07.glb"
+  },
+  {
+    "id": "axe-08",
+    "name": "카수아리나 갑판도끼",
+    "icon": "assets/item-icons/axe-08.png",
+    "model": "assets/weapon-models/axe-08.glb"
+  },
+  {
+    "id": "axe-09",
+    "name": "단조 철판도끼",
+    "icon": "assets/item-icons/axe-09.png",
+    "model": "assets/weapon-models/axe-09.glb"
+  },
+  {
+    "id": "axe-10",
+    "name": "가문비 얼음쐐기 도끼",
+    "icon": "assets/item-icons/axe-10.png",
+    "model": "assets/weapon-models/axe-10.glb"
+  },
+  {
+    "id": "harpoon-01",
+    "name": "편백 개울 작살",
+    "icon": "assets/item-icons/harpoon-01.png",
+    "model": "assets/weapon-models/harpoon-01.glb"
+  },
+  {
+    "id": "harpoon-02",
+    "name": "미루나무 저수지 작살",
+    "icon": "assets/item-icons/harpoon-02.png",
+    "model": "assets/weapon-models/harpoon-02.glb"
+  },
+  {
+    "id": "harpoon-03",
+    "name": "메스키트 가는촉 작살",
+    "icon": "assets/item-icons/harpoon-03.png",
+    "model": "assets/weapon-models/harpoon-03.glb"
+  },
+  {
+    "id": "harpoon-04",
+    "name": "갈대줄 나룻배 작살",
+    "icon": "assets/item-icons/harpoon-04.png",
+    "model": "assets/weapon-models/harpoon-04.glb"
+  },
+  {
+    "id": "harpoon-05",
+    "name": "전나무 장줄 작살",
+    "icon": "assets/item-icons/harpoon-05.png",
+    "model": "assets/weapon-models/harpoon-05.glb"
+  },
+  {
+    "id": "harpoon-06",
+    "name": "낙우송 부표 작살",
+    "icon": "assets/item-icons/harpoon-06.png",
+    "model": "assets/weapon-models/harpoon-06.glb"
+  },
+  {
+    "id": "harpoon-07",
+    "name": "참나무 갑문 작살",
+    "icon": "assets/item-icons/harpoon-07.png",
+    "model": "assets/weapon-models/harpoon-07.glb"
+  },
+  {
+    "id": "harpoon-08",
+    "name": "가문비 빙하만 작살",
+    "icon": "assets/item-icons/harpoon-08.png",
+    "model": "assets/weapon-models/harpoon-08.glb"
+  },
+  {
+    "id": "harpoon-09",
+    "name": "철제 중하중 작살",
+    "icon": "assets/item-icons/harpoon-09.png",
+    "model": "assets/weapon-models/harpoon-09.glb"
+  },
+  {
+    "id": "harpoon-10",
+    "name": "타마린드 암초 작살",
+    "icon": "assets/item-icons/harpoon-10.png",
+    "model": "assets/weapon-models/harpoon-10.glb"
+  },
+  {
+    "id": "winter-spear-01",
+    "name": "편백 털감개 창",
+    "icon": "assets/item-icons/winter-spear-01.png",
+    "model": "assets/weapon-models/winter-spear-01.glb"
+  },
+  {
+    "id": "winter-spear-02",
+    "name": "미루나무 찬바람 창",
+    "icon": "assets/item-icons/winter-spear-02.png",
+    "model": "assets/weapon-models/winter-spear-02.glb"
+  },
+  {
+    "id": "winter-spear-03",
+    "name": "메스키트 야간 원정창",
+    "icon": "assets/item-icons/winter-spear-03.png",
+    "model": "assets/weapon-models/winter-spear-03.glb"
+  },
+  {
+    "id": "winter-spear-04",
+    "name": "자작껍질 경량 방한창",
+    "icon": "assets/item-icons/winter-spear-04.png",
+    "model": "assets/weapon-models/winter-spear-04.glb"
+  },
+  {
+    "id": "winter-spear-05",
+    "name": "참나무 모직 창",
+    "icon": "assets/item-icons/winter-spear-05.png",
+    "model": "assets/weapon-models/winter-spear-05.glb"
+  },
+  {
+    "id": "winter-spear-06",
+    "name": "낙우송 방습 방한창",
+    "icon": "assets/item-icons/winter-spear-06.png",
+    "model": "assets/weapon-models/winter-spear-06.glb"
+  },
+  {
+    "id": "winter-spear-07",
+    "name": "전나무 엘크가죽 창",
+    "icon": "assets/item-icons/winter-spear-07.png",
+    "model": "assets/weapon-models/winter-spear-07.glb"
+  },
+  {
+    "id": "winter-spear-08",
+    "name": "카수아리나 겨울 해풍창",
+    "icon": "assets/item-icons/winter-spear-08.png",
+    "model": "assets/weapon-models/winter-spear-08.glb"
+  },
+  {
+    "id": "winter-spear-09",
+    "name": "철테 설원 중창",
+    "icon": "assets/item-icons/winter-spear-09.png",
+    "model": "assets/weapon-models/winter-spear-09.glb"
+  },
+  {
+    "id": "winter-spear-10",
+    "name": "가문비 눈신털 방한창",
+    "icon": "assets/item-icons/winter-spear-10.png",
+    "model": "assets/weapon-models/winter-spear-10.glb"
+  }
+]

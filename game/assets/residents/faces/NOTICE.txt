@@ -1,0 +1,4 @@
+MediaPipe canonical face topology
+Source: https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/modules/face_geometry/data/canonical_face_model.obj
+License: Apache License 2.0 (see MEDIAPIPE-LICENSE.txt).
+Modified for Returning Waters: holes capped, rear surface added, and triangle winding normalized.

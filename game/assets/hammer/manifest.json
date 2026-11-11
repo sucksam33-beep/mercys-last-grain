@@ -1,0 +1,310 @@
+[
+  {
+    "id": "estate-workbench",
+    "category": "estate",
+    "label": "작업대",
+    "icon": "assets/hammer/estate-workbench.svg",
+    "model": "estate-workbench"
+  },
+  {
+    "id": "plain-wall",
+    "category": "walls",
+    "label": "민벽",
+    "icon": "assets/hammer/plain-wall.png",
+    "model": "assets/hammer/plain-wall.glb"
+  },
+  {
+    "id": "half-wall",
+    "category": "walls",
+    "label": "반벽",
+    "icon": "assets/hammer/half-wall.png",
+    "model": "assets/hammer/half-wall.glb"
+  },
+  {
+    "id": "window-wall",
+    "category": "walls",
+    "label": "창문 벽",
+    "icon": "assets/hammer/window-wall.png",
+    "model": "assets/hammer/window-wall.glb"
+  },
+  {
+    "id": "doorway-wall",
+    "category": "walls",
+    "label": "문틀 벽",
+    "icon": "assets/hammer/doorway-wall.png",
+    "model": "assets/hammer/doorway-wall.glb"
+  },
+  {
+    "id": "stone-arch",
+    "category": "walls",
+    "label": "아치형 입구",
+    "icon": "assets/hammer/stone-arch.png",
+    "model": "assets/hammer/stone-arch.glb"
+  },
+  {
+    "id": "gable",
+    "category": "walls",
+    "label": "박공벽",
+    "icon": "assets/hammer/gable.png",
+    "model": "assets/hammer/gable.glb"
+  },
+  {
+    "id": "partition",
+    "category": "walls",
+    "label": "실내 칸막이",
+    "icon": "assets/hammer/partition.png",
+    "model": "assets/hammer/partition.glb"
+  },
+  {
+    "id": "hinged-door",
+    "category": "walls",
+    "label": "여닫이문",
+    "icon": "assets/hammer/hinged-door.png",
+    "model": "assets/hammer/hinged-door.glb"
+  },
+  {
+    "id": "sliding-door",
+    "category": "walls",
+    "label": "미닫이문",
+    "icon": "assets/hammer/sliding-door.png",
+    "model": "assets/hammer/sliding-door.glb"
+  },
+  {
+    "id": "double-door",
+    "category": "walls",
+    "label": "양문",
+    "icon": "assets/hammer/double-door.png",
+    "model": "assets/hammer/double-door.glb"
+  },
+  {
+    "id": "lattice-window",
+    "category": "walls",
+    "label": "격자창",
+    "icon": "assets/hammer/lattice-window.png",
+    "model": "assets/hammer/lattice-window.glb"
+  },
+  {
+    "id": "shutter",
+    "category": "walls",
+    "label": "덧문",
+    "icon": "assets/hammer/shutter.png",
+    "model": "assets/hammer/shutter.glb"
+  },
+  {
+    "id": "wind-screen",
+    "category": "walls",
+    "label": "가죽 방풍막",
+    "icon": "assets/hammer/wind-screen.png",
+    "model": "assets/hammer/wind-screen.glb"
+  },
+  {
+    "id": "flat-roof",
+    "category": "roofs",
+    "label": "평지붕",
+    "icon": "assets/hammer/flat-roof.png",
+    "model": "assets/hammer/flat-roof.glb"
+  },
+  {
+    "id": "shed-roof",
+    "category": "roofs",
+    "label": "외쪽 지붕",
+    "icon": "assets/hammer/shed-roof.png",
+    "model": "assets/hammer/shed-roof.glb"
+  },
+  {
+    "id": "gable-roof",
+    "category": "roofs",
+    "label": "양쪽 경사 지붕",
+    "icon": "assets/hammer/gable-roof.png",
+    "model": "assets/hammer/gable-roof.glb"
+  },
+  {
+    "id": "corner-roof",
+    "category": "roofs",
+    "label": "지붕 모서리",
+    "icon": "assets/hammer/corner-roof.png",
+    "model": "assets/hammer/corner-roof.glb"
+  },
+  {
+    "id": "ridge",
+    "category": "roofs",
+    "label": "용마루",
+    "icon": "assets/hammer/ridge.png",
+    "model": "assets/hammer/ridge.glb"
+  },
+  {
+    "id": "eave",
+    "category": "roofs",
+    "label": "처마",
+    "icon": "assets/hammer/eave.png",
+    "model": "assets/hammer/eave.glb"
+  },
+  {
+    "id": "entry-awning",
+    "category": "roofs",
+    "label": "현관 차양",
+    "icon": "assets/hammer/entry-awning.png",
+    "model": "assets/hammer/entry-awning.glb"
+  },
+  {
+    "id": "floor",
+    "category": "roofs",
+    "label": "바닥판",
+    "icon": "assets/hammer/floor.png",
+    "model": "assets/hammer/floor.glb"
+  },
+  {
+    "id": "plinth",
+    "category": "roofs",
+    "label": "돌기단",
+    "icon": "assets/hammer/plinth.png",
+    "model": "assets/hammer/plinth.glb"
+  },
+  {
+    "id": "raised-support",
+    "category": "roofs",
+    "label": "높은 받침",
+    "icon": "assets/hammer/raised-support.png",
+    "model": "assets/hammer/raised-support.glb"
+  },
+  {
+    "id": "post",
+    "category": "roofs",
+    "label": "기둥",
+    "icon": "assets/hammer/post.png",
+    "model": "assets/hammer/post.glb"
+  },
+  {
+    "id": "beam",
+    "category": "roofs",
+    "label": "들보",
+    "icon": "assets/hammer/beam.png",
+    "model": "assets/hammer/beam.glb"
+  },
+  {
+    "id": "stairs",
+    "category": "roofs",
+    "label": "계단",
+    "icon": "assets/hammer/stairs.png",
+    "model": "assets/hammer/stairs.glb"
+  },
+  {
+    "id": "ramp",
+    "category": "roofs",
+    "label": "경사로",
+    "icon": "assets/hammer/ramp.png",
+    "model": "assets/hammer/ramp.glb"
+  },
+  {
+    "id": "ladder",
+    "category": "roofs",
+    "label": "사다리",
+    "icon": "assets/hammer/ladder.png",
+    "model": "assets/hammer/ladder.glb"
+  },
+  {
+    "id": "built-in-shelf",
+    "category": "interiors",
+    "label": "붙박이 선반",
+    "icon": "assets/hammer/built-in-shelf.png",
+    "model": "assets/hammer/built-in-shelf.glb"
+  },
+  {
+    "id": "wall-storage",
+    "category": "interiors",
+    "label": "벽걸이 수납대",
+    "icon": "assets/hammer/wall-storage.png",
+    "model": "assets/hammer/wall-storage.glb"
+  },
+  {
+    "id": "workbench",
+    "category": "interiors",
+    "label": "목공 작업대",
+    "icon": "assets/hammer/workbench.png",
+    "model": "assets/hammer/workbench.glb"
+  },
+  {
+    "id": "hearth",
+    "category": "interiors",
+    "label": "화덕",
+    "icon": "assets/hammer/hearth.png",
+    "model": "assets/hammer/hearth.glb"
+  },
+  {
+    "id": "bench",
+    "category": "interiors",
+    "label": "고정 벤치",
+    "icon": "assets/hammer/bench.png",
+    "model": "assets/hammer/bench.glb"
+  },
+  {
+    "id": "lantern-bracket",
+    "category": "interiors",
+    "label": "등불 걸이",
+    "icon": "assets/hammer/lantern-bracket.png",
+    "model": "assets/hammer/lantern-bracket.glb"
+  },
+  {
+    "id": "window-trim",
+    "category": "interiors",
+    "label": "창틀 장식",
+    "icon": "assets/hammer/window-trim.png",
+    "model": "assets/hammer/window-trim.glb"
+  },
+  {
+    "id": "corner-trim",
+    "category": "interiors",
+    "label": "모서리 장식",
+    "icon": "assets/hammer/corner-trim.png",
+    "model": "assets/hammer/corner-trim.glb"
+  },
+  {
+    "id": "wall-band",
+    "category": "interiors",
+    "label": "벽 장식 띠",
+    "icon": "assets/hammer/wall-band.png",
+    "model": "assets/hammer/wall-band.glb"
+  },
+  {
+    "id": "leather-hanging",
+    "category": "interiors",
+    "label": "가죽 벽걸이",
+    "icon": "assets/hammer/leather-hanging.png",
+    "model": "assets/hammer/leather-hanging.glb"
+  },
+  {
+    "id": "leather-awning",
+    "category": "interiors",
+    "label": "가죽 차양",
+    "icon": "assets/hammer/leather-awning.png",
+    "model": "assets/hammer/leather-awning.glb"
+  },
+  {
+    "id": "curtain",
+    "category": "interiors",
+    "label": "천 커튼",
+    "icon": "assets/hammer/curtain.png",
+    "model": "assets/hammer/curtain.glb"
+  },
+  {
+    "id": "reed-screen",
+    "category": "interiors",
+    "label": "갈대 가림막",
+    "icon": "assets/hammer/reed-screen.png",
+    "model": "assets/hammer/reed-screen.glb"
+  },
+  {
+    "id": "sign",
+    "category": "interiors",
+    "label": "간판",
+    "icon": "assets/hammer/sign.png",
+    "model": "assets/hammer/sign.glb"
+  },
+  {
+    "id": "planter",
+    "category": "interiors",
+    "label": "화분 상자",
+    "icon": "assets/hammer/planter.png",
+    "model": "assets/hammer/planter.glb"
+  }
+]

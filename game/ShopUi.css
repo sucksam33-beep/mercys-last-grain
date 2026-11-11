@@ -1,0 +1,49 @@
+body #dialog:has(.shop-panel){width:min(820px,calc(100vw - 30px));box-sizing:border-box}
+body #dialog .shop-panel{width:auto;gap:10px}
+.shop-glyph{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
+.shop-summary,.shop-section h3,.shop-item,.shop-legacy,.shop-service-card{
+ background:var(--ledger-grain),linear-gradient(145deg,#493724,#2d2419 52%,#211d16);background-blend-mode:soft-light,normal;
+ border:1px solid #9a794c88;box-shadow:inset 0 0 0 2px #17130c81,0 2px 5px #0b080565;border-radius:6px;
+}
+.shop-summary{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 10px;color:#f7d89c}
+.shop-summary strong,.shop-section h3{display:flex;align-items:center;gap:8px}
+.shop-summary strong{font-size:.94rem;letter-spacing:.06em}
+.shop-notice{margin:0;color:#ffd1a1;font-size:.85rem}
+.shop-tabs{display:flex;gap:7px;overflow:auto;padding:4px;scroll-padding:5px}
+body #dialog .shop-panel :is(.shop-tabs button,.shop-actions button,.shop-market-quotes button){
+ display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:33px;
+}
+body #dialog .shop-tabs button{flex:none;white-space:nowrap;padding:6px 9px;font-size:.81rem}
+.shop-tabs .shop-glyph{width:16px;height:16px}
+.shop-stock{max-height:min(52dvh,540px);padding:4px;scroll-padding:6px;gap:11px}
+.shop-section{display:grid;gap:6px;min-width:0}
+.shop-section h3{font-size:.89rem;margin:0;padding:7px 9px;letter-spacing:.05em;color:#f9d594}
+.shop-section h3 .shop-glyph{width:17px;height:17px}
+.shop-item{display:grid;grid-template-columns:59px minmax(0,1fr) auto;align-items:center;gap:9px;padding:7px;min-width:0}
+.shop-art{position:relative;display:grid;place-items:center;width:57px;height:57px;flex:none;border:1px solid #b18a558e;border-radius:6px;
+ background:var(--ledger-grain),radial-gradient(ellipse at 46% 42%,#655034,#2b2218 78%);background-blend-mode:soft-light,normal;
+ box-shadow:inset 0 0 0 2px #1d170f,inset 0 0 0 3px #b88e5455;color:#d9b778;}
+.shop-art img{width:49px;height:49px;object-fit:contain;filter:drop-shadow(0 3px 2px #100b07a8)}
+.shop-art .shop-glyph{width:27px;height:27px}
+.shop-item-info>strong{display:block;font-size:.94rem;line-height:1.26;color:#fff0cd}
+.shop-metrics{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-top:5px}
+.shop-count{font-size:.72rem;line-height:1.22;color:#f1dfbc;background:#2a2116;border:1px solid #8c714a;padding:2px 5px;border-radius:3px;white-space:nowrap}
+.shop-count[data-empty]{color:#e0a591;border-color:#9a624e}
+.shop-actions{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:5px}
+.shop-actions input{box-sizing:border-box;width:4.3em;min-height:32px;padding:4px 6px;border:1px solid #a28052;border-radius:4px;color:#fff0d1;background:#211911}
+.shop-actions .shop-glyph{width:16px;height:16px}
+body #dialog .shop-actions .shop-aux{font-size:.75rem;padding-inline:7px}
+.shop-legacy{padding:6px 8px}
+.shop-legacy>.item{padding-inline:5px}
+.shop-item.shop-market-item{grid-template-columns:59px minmax(0,1fr);align-items:start}
+.shop-market-item>.shop-actions{display:block;grid-column:2}
+.shop-market-item .market-reference{margin:4px 0 1px;font-size:.74rem;color:#dfcba8}
+.shop-market-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.shop-market-quotes>div{border:1px solid #8c704c89;border-radius:5px;background:#2a2118;padding:5px 7px;min-width:0}
+.shop-market-quotes button{width:100%;justify-content:space-between!important}
+.shop-service-card{padding:8px 10px}
+.shop-service-card h3{display:flex;align-items:center;gap:6px;margin:0 0 5px;color:#f8d59b;font-size:.9rem}
+@media(max-width:590px){
+ .shop-item{grid-template-columns:49px minmax(0,1fr);gap:7px}.shop-art{width:47px;height:47px}.shop-art img{width:41px;height:41px}
+ .shop-actions{grid-column:2;justify-content:flex-start}.shop-item.shop-market-item{grid-template-columns:49px minmax(0,1fr)}
+}

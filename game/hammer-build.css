@@ -1,0 +1,19 @@
+#hammer-status{position:fixed;z-index:8;left:50%;bottom:110px;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 36px);padding:.62rem .85rem;color:#fff4df;text-align:center;line-height:1.4;pointer-events:none;font-size:.81rem}
+#hammer-status.blocked{border-color:#e27162}
+.hammer-reason{margin-top:.24rem;color:#ff9e92;font-weight:750}
+.hammer-controls{display:flex;justify-content:center;flex-wrap:wrap;gap:.3rem .75rem;margin-top:.45rem}
+.hammer-controls span{display:inline-flex;align-items:center;gap:.3rem;color:#efddbc}
+
+.hammer-tabs{display:flex;gap:.35rem;margin:.35rem 0 .65rem;flex-wrap:wrap}
+.hammer-tabs button{flex:1 1 auto}
+.hammer-palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:.4rem}
+.hammer-palette button{min-width:0;padding:.25rem;background:#332c22;color:#f0e2c2}
+.hammer-palette button:hover,.hammer-palette button[aria-pressed=true]{background:#4e6044;border-color:#b6ce9c}
+.hammer-palette button>span{display:grid;justify-items:center;gap:.13rem;text-align:center;font-size:.79rem}
+.hammer-palette img{width:58px;height:58px;object-fit:contain}
+.hammer-palette small{font-size:.63rem;color:#d2bb92}
+
+.estate-map-list{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0 .75rem;padding:.5rem .65rem;border:1px solid #7f9c9c;background:#283b39;color:#e8ede4;border-radius:6px}
+.estate-map-list strong{margin-right:.35rem;font-size:.85rem}
+.estate-map-list .estate-map-action{padding:.35rem .55rem;border-color:#93c0bc;color:#e4f3ed;background:#315653;font-size:.79rem}
+.estate-map-list .estate-map-action:hover,.estate-map-list .estate-map-action:focus-visible{background:#46736f}

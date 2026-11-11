@@ -1,0 +1,11 @@
+const fs=require("node:fs"),path=require("node:path"),vm=require("node:vm");
+const game=path.join(__dirname,"game"),out=path.join(__dirname,"fal-integration-review");
+fs.mkdirSync(out,{recursive:true});
+const c=vm.createContext({});
+for(const file of ["Timber.js","WeaponCatalogue.js","CraftingData.js","InventoryData.js","RegionalFoodData.js"])vm.runInContext(fs.readFileSync(path.join(game,file),"utf8"),c);
+const items=vm.runInContext(`[...new Map([...inventoryEntries,...Object.values(CraftingData.items),...regionalDishes,...regionalIngredients].map(x=>[x.id,x])).values()].map(x=>({...x,hash:CraftingData.artKey(x.id)}))`,c);
+const keys=vm.runInContext(`[...new Set(Object.values(CraftingData.recipes).flatMap(r=>r.needs.map(([id])=>id)))]`,c);
+const jobs=JSON.parse(fs.readFileSync(path.join(out,"fal-hash-jobs.json"),"utf8"));
+const report=jobs.map(job=>{const item=items.find(i=>i.hash===job.key);return {...job,id:item?.id,name:item?.name,category:item?.category,model:"assets/crafting-models/"+job.key+".glb",bundled:fs.existsSync(path.join(game,"assets/crafting-models",job.key+".glb")),linked:Boolean(item&&keys.includes(item.id))};});
+fs.writeFileSync(path.join(out,"crafted-fal-audit.json"),JSON.stringify(report,null,2));
+console.log(report.map(r=>[r.name??r.key,r.category,r.bundled,r.linked].join(" | ")).join("\n"));

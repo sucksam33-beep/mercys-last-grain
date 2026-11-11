@@ -1,0 +1,81 @@
+:root{
+ --ledger-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='112'%3E%3Cfilter id='g'%3E%3CfeTurbulence baseFrequency='.68' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='112' height='112' opacity='.20' filter='url(%23g)'/%3E%3C/svg%3E");
+ --ledger-brass:#a5814b;--ledger-gold:#e9c789;--ledger-edge:#b591535e;
+ --ledger-panel:radial-gradient(ellipse at 26% 0,#433121,#271f17 50%,#171713 95%);
+ --ledger-button:linear-gradient(155deg,#3e3122,#231e17 80%);
+ --ledger-chosen:linear-gradient(155deg,#f1d7a2,#d3a362 74%,#bf8c4c);
+}
+:root[data-sky-tone=overcast]{
+ --ledger-panel:radial-gradient(ellipse at 26% 0,#35312a,#252421 54%,#191c1b 95%);
+ --ledger-button:linear-gradient(155deg,#38332a,#22231f 80%);
+ --ledger-brass:#a38c65;
+}
+body #dialog,body .world :is(.toast,.worldHud),body .aimCue :is(span,small),body #quest-subtitle{
+ background:var(--ledger-grain),var(--ledger-panel);background-blend-mode:soft-light,normal;
+ border:1px solid var(--ledger-brass);color:#fff0d1;
+ box-shadow:inset 0 0 0 2px #181510,inset 0 0 0 3px var(--ledger-edge),0 6px 19px #0907059c;
+}
+body #dialog{border-radius:10px;box-shadow:inset 0 0 0 4px #181510,inset 0 0 0 5px var(--ledger-edge),0 16px 44px #090705b8;}
+body #dialogLabel{color:var(--ledger-gold);font-weight:700;letter-spacing:.11em}
+body #dialogLabel:not(:empty)::before{content:'◇';margin-right:.42em;color:#dbac64}
+body #dialogTitle{color:#ffe7b8;text-shadow:0 2px 3px #100a05}
+body .worldControls button{
+ background:var(--ledger-button);border:1px solid #927346;color:#fff0d5;
+ box-shadow:inset 0 0 0 2px #15120e8c;transition:background-color .12s,border-color .12s;
+}
+body #dialog button:not(.atlasPin):is(.primary,.action,[aria-pressed=true]):not(:disabled){
+ background:var(--ledger-chosen);border-color:#e1b979;color:#271a0d;
+ box-shadow:inset 0 0 0 2px #7650255c;
+}
+body #dialog button:not(.atlasPin):not(:disabled):is(:hover,:focus-visible),body .worldControls button:is(:hover,:focus-visible){border-color:#f5d190;filter:brightness(1.12)}
+body #dialog button:not(.atlasPin):focus-visible{outline-color:#ffe0a5}
+body .world .toast[data-ui-state=warning]{color:var(--ui-warning)}
+body .world .toast[data-ui-state=error]{color:var(--ui-error)}
+body .world .toast[data-ui-state=success]{color:var(--ui-success)}
+body #quest-subtitle strong,body .aimCue small{color:var(--ledger-gold)}
+
+body #dialog button:not(.atlasPin){
+ position:relative;border-radius:5px;
+ background:var(--ledger-grain),repeating-linear-gradient(120deg,#dcba7c09 0 1px,transparent 1px 5px),linear-gradient(155deg,#4a3825,#292117 57%,#211c16);
+ background-blend-mode:soft-light,normal,normal;border:1px solid #987748;color:#f9e9c8;
+ box-shadow:inset 0 0 0 2px #1b160f,inset 0 0 0 3px #c9a36a42,0 2px 3px #100d09a0;
+ text-shadow:0 1px 2px #1e150b;
+}
+body #dialog button:not(.atlasPin):is(.primary,.action,[aria-pressed=true],[aria-selected=true]):not(:disabled){
+ background:var(--ledger-grain),linear-gradient(165deg,#f6deb0,#d6ab6d 64%,#c39252);
+ background-blend-mode:multiply,normal;
+ border-color:#e7c285;color:#2b1d10;text-shadow:0 1px #ffe0a660;
+ box-shadow:inset 0 0 0 2px #6c472966,inset 0 0 0 3px #fff0c594,0 2px 3px #110d09a0;
+}
+body #dialog[data-gamepad] button:focus{outline:2px solid #ffdc95;outline-offset:2px;z-index:1}
+body #dialog .inventory-grid{padding:5px;scroll-padding:5px}
+body #dialog button.inventory-slot:not(.atlasPin){
+ background:var(--ledger-grain),radial-gradient(ellipse at 44% 42%,#59452b,#30261b 64%,#211b14);
+ background-blend-mode:soft-light,normal;border-color:#947346;
+}
+body #dialog .inventory-slot img{filter:drop-shadow(0 2px 2px #0c0906b0)}
+body #dialog .inventory-quantity{background:#211810;border:1px solid #a7824a;color:#ffe4ad}
+body #dialog .craft-tabs{padding:3px 2px;gap:7px}
+body #dialog .craft-tabs button{padding:6px 9px}
+body #dialog .food-shop-row{
+ background:var(--ledger-grain),linear-gradient(140deg,#3b2e20,#27211a);background-blend-mode:soft-light,normal;
+ border:1px solid #906f485e;border-radius:6px;box-shadow:inset 0 0 0 2px #1c17105e;
+}
+body #dialog .food-shop-row > img{border:1px solid #a3814f73;border-radius:5px;background:radial-gradient(ellipse,#5a472b,#2a2118)}
+body #dialog .food-shop-row input{border-color:#957344;background:#211a14;color:#fff1d1}
+body #dialog .food-shop-row button{min-height:31px;padding-inline:10px}
+:root[data-sky-tone=overcast] body #dialog button:not(.atlasPin):not(.primary,.action,[aria-pressed=true],[aria-selected=true]){
+ background:var(--ledger-grain),var(--ledger-button);background-blend-mode:soft-light,normal;
+}
+
+body #dialog:has(.bag-panel)>form{display:block}
+
+body #dialog .bag-panel{display:block}
+body #dialog .bag-panel>button{margin:3px 6px 4px 0}
+
+#dialog .market-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#dialog .market-quotes button{min-width:105px}
+#dialog .market-prior{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:.32em 0 .55em;color:#d0c3a8;font-size:.77rem}
+#dialog .market-change{font-weight:750;font-variant-numeric:tabular-nums;white-space:nowrap;color:#decaa2}
+#dialog .market-change[data-direction=up]{color:#ffb5a4}
+#dialog .market-change[data-direction=down]{color:#aed7ff}

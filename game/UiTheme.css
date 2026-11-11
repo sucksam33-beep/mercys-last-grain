@@ -1,0 +1,94 @@
+:root {
+ color-scheme:dark;
+ --ui-back:#171c1b; --ui-panel:#242b28; --ui-surface:#323b35; --ui-line:#8b9282;
+ --ui-text:#faf3e4; --ui-sub:#d7d1c3; --ui-accent:#eed09a; --ui-edge:#b89560;
+ --ui-on-accent:#1b1c17; --ui-scrim:#090f13ac; --ui-shadow:#070b0cbb;
+ --ui-success:#b6e4ba; --ui-warning:#ffe0a4; --ui-error:#ffbcb7;
+ --ink:var(--ui-text); --quiet:var(--ui-sub); --muted:var(--ui-sub);
+ --gold:var(--ui-accent); --panel:var(--ui-panel); --line:var(--ui-line);
+}
+:root[data-region="0"]{--ui-back:#18211e;--ui-panel:#29332e;--ui-surface:#35443a;--ui-line:#8b9a90;--ui-accent:#efd1a0;--ui-edge:#9caa91}
+:root[data-region="1"]{--ui-back:#162625;--ui-panel:#263736;--ui-surface:#3b4740;--ui-line:#a19a7d;--ui-accent:#f1cc8d;--ui-edge:#c47c60}
+:root[data-region="2"]{--ui-back:#2b1d17;--ui-panel:#3e2a22;--ui-surface:#53382c;--ui-line:#b29879;--ui-accent:#f8d4a1;--ui-edge:#79b7b0}
+:root[data-region="3"]{--ui-back:#1d2322;--ui-panel:#2b332f;--ui-surface:#38453d;--ui-line:#9a9b89;--ui-accent:#efc7a4;--ui-edge:#d69479}
+:root[data-region="4"]{--ui-back:#17232d;--ui-panel:#273743;--ui-surface:#354750;--ui-line:#8d9fae;--ui-accent:#cde6f5;--ui-edge:#8eae98}
+:root[data-region="5"]{--ui-back:#1a2825;--ui-panel:#2b3832;--ui-surface:#3c4940;--ui-line:#95a59b;--ui-accent:#d3e5d5;--ui-edge:#b9a083}
+:root[data-region="6"]{--ui-back:#132725;--ui-panel:#233b37;--ui-surface:#344b42;--ui-line:#a5af98;--ui-accent:#f6dfb2;--ui-edge:#86d2c3}
+:root[data-region="7"]{--ui-back:#111e2e;--ui-panel:#233247;--ui-surface:#31465d;--ui-line:#9caec2;--ui-accent:#d9edff;--ui-edge:#93c7ed}
+
+html body{color:var(--ui-text)}
+:where(body) :where(button,input,select,textarea){font-family:inherit;accent-color:var(--ui-accent)}
+body :is(dialog:not(.opening),.panel){color:var(--ui-text);background:var(--ui-panel);border-color:var(--ui-line);box-shadow:0 12px 42px var(--ui-shadow);overflow-wrap:anywhere;word-break:keep-all}
+body dialog:not(.opening){max-height:calc(100dvh - 24px);overscroll-behavior:contain}
+body dialog:not(.opening)::backdrop{background:var(--ui-scrim)}
+body .opening-caption{color:var(--ui-text)}
+body :is(dialog,.panel) :is(h2,h3){color:var(--ui-accent)}
+body :is(.journal,.muted,.atlasDetail small,.asagiDetail p,#checking,.title-page nav small){color:var(--ui-sub)}
+body :is(.item,.card,.asagiAtlas,.atlas,.desktop-loading-cover .loading-content){border-color:var(--ui-line)}
+body :is(dialog,.panel) .item{border-color:color-mix(in srgb,var(--ui-line) 43%,transparent)}
+body :is(dialog,.panel) :is(input:not([type=range]),select,textarea){background:var(--ui-back);color:var(--ui-text);border-color:var(--ui-line)}
+body :is(dialog,.panel) button,body .world :is(.worldHud,.worldControls button){
+ background:var(--ui-surface);color:var(--ui-text);border:1px solid var(--ui-line)
+}
+body :is(dialog,.panel) button:is(:hover,:focus-visible),body .world :is(.worldHud,.worldControls button):is(:hover,:focus-visible){
+ background:color-mix(in srgb,var(--ui-surface) 82%,var(--ui-accent));border-color:var(--ui-accent)
+}
+body :is(dialog,.panel) :is(button.primary,button.action,button[aria-pressed=true],button[aria-current=location]){
+ color:var(--ui-on-accent);background:var(--ui-accent);border-color:var(--ui-accent);font-weight:700
+}
+body :is(dialog,.panel) :is(button.primary,button.action,button[aria-pressed=true],button[aria-current=location]):is(:hover,:focus-visible){
+ color:var(--ui-on-accent);background:color-mix(in srgb,var(--ui-accent) 82%,white)
+}
+body :is(button,input,select,textarea):focus-visible,body dialog[data-gamepad] button:focus{outline:2px solid var(--ui-accent);outline-offset:3px}
+body button:not(:disabled):not([aria-disabled=true]):active{box-shadow:inset 0 2px 4px var(--ui-shadow)}
+body button:is(:disabled,[aria-disabled=true]){opacity:.6;cursor:default}
+body :is(.world .toast,.world .caption,.aimCue span,.aimCue small){
+ color:var(--ui-text);background:var(--ui-back);border:1px solid var(--ui-edge);box-shadow:0 2px 10px var(--ui-shadow)
+}
+body .world .caption{padding:.35rem .85rem;max-width:88vw;border-top:0;border-right:0;border-left:0}
+body .caption :is(b,small){color:var(--ui-text)}
+body .caption small{color:var(--ui-sub)}
+body .world .radar{border-color:var(--ui-edge);background:var(--ui-back)}
+body .aimCue::before{background:var(--ui-text);box-shadow:0 0 0 1px var(--ui-back)}
+body .aimCue :is(span,small){max-width:82vw;overflow-wrap:anywhere;white-space:normal;text-align:center;width:max-content}
+body .aimCue small{color:var(--ui-accent)}
+body .atlasPin.connected{border-color:var(--ui-edge);color:var(--ui-accent)}
+body .atlasPin.connected[aria-current=location]{color:var(--ui-on-accent)}
+body .world .game-menu-entry{position:absolute;right:18px;bottom:79px;z-index:3;padding:6px 15px}
+body .game-menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+body .game-menu-grid [role=status]{grid-column:1/-1}
+body [hidden]{display:none!important}
+body :is(.notice,#update-notice,[data-ui-state=warning]),body .world .toast[data-ui-state=warning]{color:var(--ui-warning)}
+body :is(#panel-error,.field-error,[role=alert],[data-ui-state=error]),body .world .toast[data-ui-state=error]{color:var(--ui-error)}
+body [data-ui-state=success],body .world .toast[data-ui-state=success]{color:var(--ui-success)}
+body [data-ui-state=loading]{color:var(--ui-sub)}
+body.title-page nav button:is(.menu-focus,:focus-visible,:hover){
+ color:var(--ui-accent);border-left-color:var(--ui-edge);
+ background:linear-gradient(90deg,color-mix(in srgb,var(--ui-accent) 24%,transparent),transparent)
+}
+@media(max-width:540px){
+ body .world .caption{top:12px}
+ body dialog:not(.opening){padding:14px}
+ body.title-page .title-shell{width:auto;margin-inline:18px}
+ body.title-page .title-heading h1{white-space:normal}
+}
+:root[data-sky-tone="overcast"] {
+ --ui-overcast-back: color-mix(in srgb,var(--ui-back) 78%,#414a50);
+ --ui-overcast-panel: color-mix(in srgb,var(--ui-panel) 82%,#495158);
+ --ui-overcast-surface: color-mix(in srgb,var(--ui-surface) 81%,#495158);
+ --ui-overcast-line: color-mix(in srgb,var(--ui-line) 55%,#555e62);
+ --ui-overcast-shadow: #131c2363;
+}
+:root[data-sky-tone="overcast"] body :is(dialog:not(.opening),.panel,.card) {
+ background:var(--ui-overcast-panel);border-color:var(--ui-overcast-line);
+ box-shadow:0 5px 20px var(--ui-overcast-shadow);
+}
+:root[data-sky-tone="overcast"] body .world :is(.worldHud:not([data-interaction]),.worldControls button,.caption,.toast,.radar),
+:root[data-sky-tone="overcast"] body .aimCue :is(span,small),
+:root[data-sky-tone="overcast"] body .opening-skip {
+ background:color-mix(in srgb,var(--ui-overcast-back) 92%,transparent);
+ border-color:var(--ui-overcast-line);box-shadow:0 2px 8px var(--ui-overcast-shadow);
+}
+:root[data-sky-tone="overcast"] body :is(dialog,.panel) button:not(.primary,.action,[aria-pressed=true],[aria-current=location],:hover,:focus-visible) {
+ background:var(--ui-overcast-surface);border-color:var(--ui-overcast-line);
+}
