@@ -30,8 +30,11 @@ try {
  $credentialLines = $null
  $credentialFields = $null
 }
-$configuredRemote = git -C $projectRoot remote get-url origin 2>$null
-if ($LASTEXITCODE -eq 0) {
+$remoteNames = @(git -C $projectRoot remote)
+if ($LASTEXITCODE) { throw 'Cannot list Git remotes.' }
+if ($remoteNames -contains 'origin') {
+ $configuredRemote = git -C $projectRoot remote get-url origin
+ if ($LASTEXITCODE) { throw 'Cannot read origin.' }
  if ($configuredRemote -ne $remoteUrl) { throw 'Existing origin points to a different repository.' }
 } else {
  git -C $projectRoot remote add origin $remoteUrl

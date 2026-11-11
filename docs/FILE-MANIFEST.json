@@ -8669,8 +8669,8 @@
     },
     {
       "path": "scripts/Publish.ps1",
-      "size": 2876,
-      "sha256": "2cfbe17b66a9a94ba3e2c214d1324ba59ccb8968c8134e24f6d0351178ae0f46"
+      "size": 3034,
+      "sha256": "ba4f71d103e16e92a5793bfb4c602d38e2eb7032a914c18021e9f2e9584848e2"
     },
     {
       "path": "scripts/Validate.mjs",
